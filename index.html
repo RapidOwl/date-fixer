@@ -26,6 +26,18 @@
 			justify-content: center;
 			gap: 32px;
 		}
+
+		.output,
+		textarea {
+			font-family: monospace;
+			font-size: 12px;
+			padding: 8px;
+		}
+
+		.output {
+			background: lightblue;
+			border-radius: 10px;
+		}
 	</style>
 </head>
 
@@ -33,7 +45,7 @@
 	<main>
 		<h1>Date Fixer</h1>
 		<p>
-			EventBrite downloads include dates us long US format. This means if
+			EventBrite downloads include dates in US format. This means if
 			you're in the UK, you then have a fun job trying to convert them to
 			something useful.
 		</p>
@@ -50,11 +62,11 @@
 			</div>
 			<div>
 				<h2>Long Date Format</h2>
-				<p id="bulkResultsLongDateFormat"></p>
+				<p class="output" id="bulkResultsLongDateFormat">Please input dates</p>
 			</div>
 			<div>
 				<h2>ISO Date Format</h2>
-				<p id="bulkResultsISODateFormat"></p>
+				<p class="output" id="bulkResultsISODateFormat">Please input dates</p>
 			</div>
 		</section>
 	</main>
